@@ -4,54 +4,146 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Abiodun Samuel Akozo‑Emiri</title>
+
+  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
-    // Enable dark mode toggle
     tailwind.config = {
-      darkMode: 'class',
+      darkMode: 'class', // Enable dark mode toggling with class
     };
   </script>
-</head>
-<body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-200 transition-all">
 
-  <!-- Header -->
-  <header class="bg-white dark:bg-gray-800 shadow py-6 relative">
-    <div class="container mx-auto px-6 md:px-12 text-center">
-      <img src="profile.jpg" alt="Profile Image" class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-indigo-500">
-      <h1 class="text-4xl font-extrabold">Abiodun Samuel Akozo‑Emiri</h1>
-      <p class="text-lg text-indigo-600 dark:text-indigo-400 mt-2">Data Analyst | Data Scientist | Developer</p>
-      <button onclick="toggleDarkMode()" class="absolute top-4 right-6 bg-gray-200 dark:bg-gray-700 text-sm px-3 py-1 rounded hover:bg-gray-300 dark:hover:bg-gray-600 transition">🌙 Toggle Dark Mode</button>
+  <!-- Custom Styles -->
+  <style>
+    html {
+      scroll-behavior: smooth; /* Smooth scroll for in-page anchor links */
+    }
+    body {
+      background: linear-gradient(to bottom right, #60a5fa, #facc15); /* Blue to gold gradient */
+    }
+    .glass {
+      /* Glassmorphism effect */
+      background: rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-radius: 1rem;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+
+  <!-- Google Analytics setup -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5Z0P2LT69V"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-5Z0P2LT69V');
+  </script>
+</head>
+<body class="text-gray-800 dark:bg-gray-900 dark:text-gray-200 transition-all">
+
+  <!-- Navigation Bar -->
+  <nav class="bg-white/80 dark:bg-gray-800/90 backdrop-blur sticky top-0 z-50 shadow">
+    <div class="container mx-auto flex justify-between items-center px-6 py-4">
+      <h1 class="text-lg font-semibold">BioSam-Data</h1>
+      <ul class="flex space-x-6 text-sm">
+        <li><a href="#about" class="hover:text-indigo-600">About</a></li>
+        <li><a href="#skills" class="hover:text-indigo-600">Skills</a></li>
+        <li><a href="#projects" class="hover:text-indigo-600">Projects</a></li>
+        <li><a href="#certs" class="hover:text-indigo-600">Certificates</a></li>
+        <li><a href="#contact" class="hover:text-indigo-600">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Header Section -->
+  <header class="bg-white/80 dark:bg-gray-800/90 backdrop-blur shadow py-10">
+    <div class="container mx-auto px-6 text-center">
+      <!-- Clickable profile image opens the full picture in a new tab -->
+      <a href="profile.jpg" target="_blank">
+        <img src="profile.jpg" alt="Profile Image" class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-indigo-500 hover:scale-105 transition-transform">
+      </a>
+      <h1 class="text-4xl font-extrabold text-gray-900 dark:text-white">Abiodun Samuel Akozo‑Emiri</h1>
+      <p class="text-lg text-indigo-700 dark:text-indigo-300 mt-2">Data Analyst | Data Scientist | Developer</p>
+      <!-- Dark mode toggle button -->
+      <button onclick="toggleDarkMode()" class="mt-4 bg-gray-200 dark:bg-gray-700 text-sm px-3 py-1 rounded hover:bg-gray-300 dark:hover:bg-gray-600 transition">🌙 Toggle Dark Mode</button>
     </div>
   </header>
 
-  <main class="container mx-auto px-6 md:px-12 py-12 space-y-16">
+  <!-- Main Content -->
+  <main class="container mx-auto px-6 py-12">
 
-    <!-- About -->
-    <section id="about" class="text-center max-w-3xl mx-auto">
-      <h2 class="text-2xl font-bold mb-4">👤 About Me</h2>
-      <p>I’m Abiodun Samuel Akozo‑Emiri, a passionate Data Analyst and Data Scientist with a developer’s mindset. I blend strong skills in Python, SQL, and full‑stack data‑driven tools with practical experience building applications—from educational capstone projects to MovieTrackerApp—while maintaining a foundation in analytics and visualization. I thrive on transforming complex data into impactful insights, and I’m committed to continuous learning and real‑world project execution.</p>
+    <!-- About Section with glass effect -->
+    <section id="about" class="max-w-3xl mx-auto text-center mb-16 glass p-8">
+      <h2 class="text-2xl font-bold mb-4 text-indigo-800 dark:text-indigo-300">👤 About Me</h2>
+      <p class="text-gray-900 dark:text-gray-200">
+        I’m Abiodun Samuel Akozo‑Emiri, a passionate Data Analyst and Data Scientist with a developer’s mindset. I blend strong skills in Python, SQL, and full‑stack data‑driven tools with practical experience building applications—from educational capstone projects to MovieTrackerApp—while maintaining a foundation in analytics and visualization. I thrive on transforming complex data into impactful insights, and I’m committed to continuous learning and real‑world project execution.
+      </p>
+      <!-- Download Resume Button -->
+      <div class="mt-6">
+        <a href="resume.pdf" download class="inline-block bg-indigo-600 text-white px-6 py-2 rounded-full shadow hover:bg-indigo-700 transition">
+          📄 Download Resume
+        </a>
+      </div>
     </section>
 
-    <!-- Projects -->
-    <section id="projects">
+    <!-- Skills Section -->
+    <section id="skills" class="text-center max-w-4xl mx-auto mb-16">
+      <h2 class="text-2xl font-bold mb-6">🛠️ Skills & Tools</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 text-sm">
+        <!-- Skill badges -->
+        <div class="bg-white dark:bg-gray-800 rounded p-4">Python</div>
+        <div class="bg-white dark:bg-gray-800 rounded p-4">SQL</div>
+        <div class="bg-white dark:bg-gray-800 rounded p-4">Tableau</div>
+        <div class="bg-white dark:bg-gray-800 rounded p-4">Power BI</div>
+        <div class="bg-white dark:bg-gray-800 rounded p-4">Excel</div>
+        <div class="bg-white dark:bg-gray-800 rounded p-4">Pandas</div>
+        <div class="bg-white dark:bg-gray-800 rounded p-4">Seaborn</div>
+        <div class="bg-white dark:bg-gray-800 rounded p-4">GitHub</div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="mb-16">
       <h2 class="text-2xl font-bold mb-6 text-center">💼 Projects</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Capstone Project Card -->
         <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow hover:shadow-lg transition">
           <h3 class="text-xl font-bold">🎯 Capstone Project</h3>
-          <p class="mt-2">A data‑driven solution tackling real‑world challenges. Includes Jupyter Notebook, visuals, and insights.</p>
+          <ul class="mt-2 list-disc list-inside text-left text-sm">
+            <li>Exploratory data analysis on Palmer Penguins dataset</li>
+            <li>Visualized species trends, feature relationships using Seaborn</li>
+            <li>Generated notebook reports with insights for stakeholders</li>
+          </ul>
           <a href="https://github.com/BioSam-Data/capstone-project" target="_blank" class="text-indigo-600 dark:text-indigo-400 hover:underline mt-3 inline-block">🔗 View on GitHub</a>
         </div>
 
+        <!-- MovieTrackerApp Card -->
         <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow hover:shadow-lg transition">
           <h3 class="text-xl font-bold">🎬 MovieTrackerApp</h3>
-          <p class="mt-2">A Streamlit app to track and rate movies. Features dynamic UI, data filtering, and persistent storage.</p>
+          <ul class="mt-2 list-disc list-inside text-left text-sm">
+            <li>Streamlit app for organizing personal movie preferences</li>
+            <li>Features genre filtering, search logic, and simple UI</li>
+            <li>Backed by SQLite and Python for fast lookups</li>
+          </ul>
           <a href="https://github.com/BioSam-Data/MovieTrackerApp" target="_blank" class="text-indigo-600 dark:text-indigo-400 hover:underline mt-3 inline-block">🔗 View on GitHub</a>
+        </div>
+
+        <!-- MarketMetrics Project Card -->
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-bold">📈 MarketMetrics</h3>
+          <ul class="mt-2 list-disc list-inside text-left text-sm">
+            <li>Analyzed multi-source commerce data for delivery insights</li>
+            <li>Identified delay patterns, seller gaps, and performance KPIs</li>
+            <li>Built Python + Power BI dashboard and markdown report</li>
+          </ul>
+          <a href="https://github.com/BioSam-Data/MarketMetrics" target="_blank" class="text-indigo-600 dark:text-indigo-400 hover:underline mt-3 inline-block">🔗 View on GitHub</a>
         </div>
       </div>
     </section>
 
-    <!-- Certificates -->
-    <section id="certs" class="max-w-2xl mx-auto text-center">
+    <!-- Certificates Section -->
+    <section id="certs" class="max-w-2xl mx-auto text-center mb-16">
       <h2 class="text-2xl font-bold mb-4">🎓 Certificates</h2>
       <ul class="list-disc list-inside text-left">
         <li>Python Programming (Fundamentals & Advanced)</li>
@@ -61,12 +153,7 @@
       </ul>
     </section>
 
-    <!-- Resume -->
-    <section id="resume" class="text-center">
-      <a href="resume.pdf" target="_blank" class="mt-6 inline-block px-6 py-2 bg-indigo-600 text-white rounded-full hover:bg-indigo-700 transition">📄 Download Resume</a>
-    </section>
-
-    <!-- Contact -->
+    <!-- Contact Section -->
     <section id="contact" class="text-center">
       <h2 class="text-2xl font-bold mb-4">📬 Contact Me</h2>
       <p>Email: <a href="mailto:biosam04@gmail.com" class="text-indigo-600 dark:text-indigo-400 hover:underline">biosam04@gmail.com</a></p>
@@ -80,13 +167,15 @@
 
   </main>
 
+  <!-- Footer -->
   <footer class="bg-gray-100 dark:bg-gray-800 py-6 text-center">
     <p class="text-sm text-gray-500 dark:text-gray-400">&copy; 2025 Abiodun Samuel Akozo‑Emiri</p>
   </footer>
 
+  <!-- Toggle dark mode script -->
   <script>
     function toggleDarkMode() {
-      document.documentElement.classList.toggle('dark');
+      document.documentElement.classList.toggle('dark'); // Toggle the dark mode class on the root element
     }
   </script>
 
