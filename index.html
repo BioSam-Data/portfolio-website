@@ -51,6 +51,7 @@
         <li><a href="#skills" class="hover:text-indigo-600">Skills</a></li>
         <li><a href="#projects" class="hover:text-indigo-600">Projects</a></li>
         <li><a href="#certs" class="hover:text-indigo-600">Certificates</a></li>
+        <li><a href="#blog" class="hover:text-indigo-600">Blog</a></li>
         <li><a href="#contact" class="hover:text-indigo-600">Contact</a></li>
       </ul>
     </div>
@@ -59,13 +60,11 @@
   <!-- Header Section -->
   <header class="bg-white/80 dark:bg-gray-800/90 backdrop-blur shadow py-10">
     <div class="container mx-auto px-6 text-center">
-      <!-- Clickable profile image opens the full picture in a new tab -->
       <a href="profile.jpg" target="_blank">
         <img src="profile.jpg" alt="Profile Image" class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-indigo-500 hover:scale-105 transition-transform">
       </a>
       <h1 class="text-4xl font-extrabold text-gray-900 dark:text-white">Abiodun Samuel Akozo‑Emiri</h1>
-      <p class="text-lg text-indigo-700 dark:text-indigo-300 mt-2">Data Analyst | Data Scientist | Developer</p>
-      <!-- Dark mode toggle button -->
+      <p class="text-lg text-indigo-700 dark:text-indigo-300 mt-2">Data Analyst | Data Engineer | Developer</p>
       <button onclick="toggleDarkMode()" class="mt-4 bg-gray-200 dark:bg-gray-700 text-sm px-3 py-1 rounded hover:bg-gray-300 dark:hover:bg-gray-600 transition">🌙 Toggle Dark Mode</button>
     </div>
   </header>
@@ -73,17 +72,23 @@
   <!-- Main Content -->
   <main class="container mx-auto px-6 py-12">
 
-    <!-- About Section with glass effect -->
+    <!-- About Section -->
     <section id="about" class="max-w-3xl mx-auto text-center mb-16 glass p-8">
       <h2 class="text-2xl font-bold mb-4 text-indigo-800 dark:text-indigo-300">👤 About Me</h2>
       <p class="text-gray-900 dark:text-gray-200">
-        I’m Abiodun Samuel Akozo‑Emiri, a passionate Data Analyst and Data Scientist with a developer’s mindset. I blend strong skills in Python, SQL, and full‑stack data‑driven tools with practical experience building applications—from educational capstone projects to MovieTrackerApp—while maintaining a foundation in analytics and visualization. I thrive on transforming complex data into impactful insights, and I’m committed to continuous learning and real‑world project execution.
+        <p>I didn’t stumble into data, I chased it.</p>
+        <p>From being that tiny kid who loved numbers - to representing my school three times in national math competitions - I’ve always been drawn to patterns, puzzles, and making sense of what others overlook.</p>
+
+        <p>Today, I’m a Data Analyst, Data Engineer and budding Data Scientist. I combine storytelling with data and statistics to bring out insights that help make smarter business decisions. I work very well with Python, Excel, SQL, Tableau, and Power BI, and I’ve used these tools to turn raw data into dashboards, strategies, and reports that speak clearly in simple terms to stakeholders, not just data professionals and technical personnel.</p>
+
+        <p>In my most-recent project, MarketMetrics, I analyzed over 100,000 orders to expose delivery gaps in Brazil’s eCommerce space. It wasn’t just about coding or exploring data, it was about bringing impact. I uncovered why delays happen, who’s affected the most, and what businesses can do to fix it. That’s the kind of work that excites me, where analysis meets action.</p>
+
+        <p>I’m also passionate about helping more people break into tech affordably, which is why I intend to launch a training program in the future.</p>
+
+        <p>Whether you’re hiring, collaborating, or just passionate about making sense of messy data in a noisy world, feel free to connect.</p>
       </p>
-      <!-- Download Resume Button -->
       <div class="mt-6">
-        <a href="resume.pdf" download class="inline-block bg-indigo-600 text-white px-6 py-2 rounded-full shadow hover:bg-indigo-700 transition">
-          📄 Download Resume
-        </a>
+        <a href="resume.pdf" download class="inline-block bg-indigo-600 text-white px-6 py-2 rounded-full shadow hover:bg-indigo-700 transition">📄 Download Resume</a>
       </div>
     </section>
 
@@ -91,7 +96,6 @@
     <section id="skills" class="text-center max-w-4xl mx-auto mb-16">
       <h2 class="text-2xl font-bold mb-6">🛠️ Skills & Tools</h2>
       <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 text-sm">
-        <!-- Skill badges -->
         <div class="bg-white dark:bg-gray-800 rounded p-4">Python</div>
         <div class="bg-white dark:bg-gray-800 rounded p-4">SQL</div>
         <div class="bg-white dark:bg-gray-800 rounded p-4">Tableau</div>
@@ -107,7 +111,6 @@
     <section id="projects" class="mb-16">
       <h2 class="text-2xl font-bold mb-6 text-center">💼 Projects</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <!-- Capstone Project Card -->
         <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow hover:shadow-lg transition">
           <h3 class="text-xl font-bold">🎯 Capstone Project</h3>
           <ul class="mt-2 list-disc list-inside text-left text-sm">
@@ -118,7 +121,6 @@
           <a href="https://github.com/BioSam-Data/capstone-project" target="_blank" class="text-indigo-600 dark:text-indigo-400 hover:underline mt-3 inline-block">🔗 View on GitHub</a>
         </div>
 
-        <!-- MovieTrackerApp Card -->
         <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow hover:shadow-lg transition">
           <h3 class="text-xl font-bold">🎬 MovieTrackerApp</h3>
           <ul class="mt-2 list-disc list-inside text-left text-sm">
@@ -129,7 +131,6 @@
           <a href="https://github.com/BioSam-Data/MovieTrackerApp" target="_blank" class="text-indigo-600 dark:text-indigo-400 hover:underline mt-3 inline-block">🔗 View on GitHub</a>
         </div>
 
-        <!-- MarketMetrics Project Card -->
         <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow hover:shadow-lg transition">
           <h3 class="text-xl font-bold">📈 MarketMetrics</h3>
           <ul class="mt-2 list-disc list-inside text-left text-sm">
@@ -146,12 +147,44 @@
     <section id="certs" class="max-w-2xl mx-auto text-center mb-16">
       <h2 class="text-2xl font-bold mb-4">🎓 Certificates</h2>
       <ul class="list-disc list-inside text-left">
-        <li>Python Programming (Fundamentals & Advanced)</li>
-        <li>MySQL</li>
-        <li>Excel, Power BI & Tableau</li>
-        <li>Full Stack Data Science Training</li>
+        <li>Digital Regenesys: Full Stack Data Science</li>
+        <li>LinkedIn Learning: Python Programming (Beyond the Fundamentals)</li>
+        <li>LinkedIn Learning: Python Programming (Fundamentals)</li>
+        <li>Programming Hub: HTML</li>
+        <li>Programming Hub: IT Basics</li>
       </ul>
     </section>
+
+    
+<!-- Blog Section -->
+<section id="blog" class="mb-16">
+  <h2 class="text-2xl font-bold mb-6 text-center">📝 Blog Posts</h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+    <!-- Blog Post 1 -->
+    <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow hover:shadow-lg transition">
+      <h3 class="text-xl font-bold">🚚 Exposing Gaps in Brazil's eCommerce Delivery System</h3>
+      <p class="mt-2 text-sm text-gray-700 dark:text-gray-300">
+        Some regions receive deliveries quite fast. Others? Not so much. I analyzed over 100k orders to find out why.
+      </p>
+      <a href="https://biosam-data.medium.com/how-i-uncovered-hidden-delays-and-delivery-gaps-in-a-multi-million-order-dataset-23290d2e84c0" target="_blank" class="text-indigo-600 dark:text-indigo-400 hover:underline mt-3 inline-block">
+        🔗 Read on Medium
+      </a>
+    </div>
+
+    <!-- Blog Post 2 -->
+    <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow hover:shadow-lg transition">
+      <h3 class="text-xl font-bold">🔒 Microsoft, Why Are You Still Gatekeeping in 2025? Let’s Talk About Geographic Discrimination.</h3>
+      <p class="mt-2 text-sm text-gray-700 dark:text-gray-300">
+        By Microsoft’s standards, Nigerians might as well be doomed.
+      </p>
+      <a href="https://biosam-data.medium.com/microsoft-why-are-you-still-gatekeeping-in-2025-lets-talk-about-geographic-discrimination-9a25b552adae" target="_blank" class="text-indigo-600 dark:text-indigo-400 hover:underline mt-3 inline-block">
+        🔗 Read on Medium
+      </a>
+    </div>
+  </div>
+</section>
+
 
     <!-- Contact Section -->
     <section id="contact" class="text-center">
@@ -162,6 +195,8 @@
         <a href="https://www.linkedin.com/in/abiodun-akozo-emiri-data-analyst" target="_blank" class="text-indigo-600 dark:text-indigo-400 hover:underline">LinkedIn</a>
         |
         <a href="https://github.com/BioSam-Data" target="_blank" class="text-indigo-600 dark:text-indigo-400 hover:underline">GitHub</a>
+        |
+        <a href="https://biosam-data.medium.com" target="_blank" class="text-indigo-600 dark:text-indigo-400 hover:underline">Medium</a>
       </p>
     </section>
 
@@ -175,7 +210,7 @@
   <!-- Toggle dark mode script -->
   <script>
     function toggleDarkMode() {
-      document.documentElement.classList.toggle('dark'); // Toggle the dark mode class on the root element
+      document.documentElement.classList.toggle('dark');
     }
   </script>
 
